@@ -1,0 +1,16 @@
+@SIZE 1920 1080
+@BACKGROUND 255 255 255
+@POSITION 100 100
+FUNC line()
+    DEF c 0
+    LOOP 255
+        COLOR c c c 
+        MOVE 3
+        ADD c 1
+    END LOOP
+END FUNC
+
+LOOP 4
+    CALL line()
+    TURN 90
+END LOOP
